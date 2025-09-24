@@ -190,8 +190,12 @@ L'application s'adapte automatiquement à tous les types d'écrans :
 
 ## 📄 Licence
 
-Ce projet est développé à des fins de démonstration.
+Ce projet est développé à des fins de test dans le cadre de mon test Chez APS
 
 ---
 
-**Développé avec ❤️ par l'équipe Elliora Banking**
+## credential d'authentification par defaul :
+username : alice
+password : password123
+
+**Développé avec ❤️ par Pierre Augustin Nyamsi*
