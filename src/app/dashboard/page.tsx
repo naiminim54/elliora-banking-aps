@@ -48,6 +48,14 @@ interface Account {
   balance: number;
 }
 
+interface Transaction {
+  id: string;
+  amount: number;
+  description: string;
+  date: string;
+  status: string;
+}
+
 export default function Dashboard() {
   const [accounts, setAccounts] = useState<Account[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -59,7 +67,7 @@ export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // États pour l'historique des transactions du dashboard
-  const [dashboardTransactions, setDashboardTransactions] = useState<unknown[]>([]);
+  const [dashboardTransactions, setDashboardTransactions] = useState<Transaction[]>([]);
   const [dashboardSearch, setDashboardSearch] = useState('');
   const [dashboardCurrentPage, setDashboardCurrentPage] = useState(1);
   const dashboardPageSize = 5;
